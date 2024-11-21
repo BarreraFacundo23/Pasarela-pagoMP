@@ -1,0 +1,98 @@
+/* Estilo para toda la página */
+.membresia-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f1f6; /* Fondo azul */
+    color: #121212; /* Texto blanco */
+    padding: 2rem;
+  }
+  
+  h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .text-success {
+    color: #00ffcc;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* Flexbox para alinear y ajustar las cards */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* Espaciado entre las cards */
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Estilo de las cards */
+  .card {
+    border: none;
+    background-color: #24cda0;
+    color: #1fbfbf;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px; /* Tamaño uniforme para todas las cards */
+    height: 400px; /* Altura uniforme para todas las cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para las cards */
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .features {
+    flex-grow: 1; /* Hace que las características llenen el espacio restante */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .features li {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1134c4;
+  }
+  
+  .btn {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #00bfff;
+    color: #fff;
+  }
+  
+
+  
+  
+  /* Disclaimer */
+  .disclaimer {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #1acc7f;
+    max-width: 800px;
+    text-align: center;
+  }
+  

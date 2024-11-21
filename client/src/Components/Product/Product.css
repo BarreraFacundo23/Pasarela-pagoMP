@@ -1,65 +1,88 @@
 /* Contenedor principal */
 .product-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título */
+.product-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Tarjetas */
+.product-card {
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 95%;
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Espaciado entre columnas */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Separación entre columnas */
+}
+
+.col-md-6 {
+  flex: 0 0 50%; /* Cada columna ocupa el 50% del espacio */
+  max-width: 50%;
+}
+
+/* Alineación responsiva */
+@media (max-width: 768px) {
+  .col-md-6 {
+      flex: 0 0 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      max-width: 100%;
   }
-  
-  /* Título */
-  .product-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  /* Tarjetas */
-  .product-card {
-    border: none;
-    border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 95%;
-  }
-  
-  .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  /* Logo del club */
-  .club-logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  /* Formulario */
-  .form-control {
-    border-radius: 8px;
-    border: 1px solid #ced4da;
-    padding: 10px;
-  }
-  
-  /* Alerta */
-  .product-alert {
-    background-color: #fff8e5;
-    border: 1px solid #ffecb5;
-    color: #856404;
-    padding: 20px;
-    font-size: 0.9rem;
-  }
-  
-  /* Botón */
-  .btn-success {
-    background-color: #28a745;
-    border: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 8px;
-  }
-  
-  .btn-success:hover {
-    background-color: #218838;
-  }
-  
+}
+
+/* Título de las tarjetas */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Logo del club */
+.club-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Formulario */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+}
+
+/* Alerta */
+.product-alert {
+  background-color: #fff8e5;
+  border: 1px solid #ffecb5;
+  color: #856404;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+/* Botón */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
